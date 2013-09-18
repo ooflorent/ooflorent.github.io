@@ -2,19 +2,19 @@
 layout: default
 ---
 
-<article>
-  <header class="article-header">
+<article class="post clearfix">
+  <header class="post-header">
     <div class="meta">
       <time datetime="{{ page.date | date:'%Y-%m-%d' }}" pubdate="pubdate">{{ page.date | date_to_long_string }}</time>
     </div>
-    <div class="title">
-      <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
-    </div>
+    <h1 class="title">
+      <a href="{{ page.url }}">{{ page.title }}</a>
+    </h1>
   </header>
-  <section class="article-content">
+  <section class="post-content">
     {{ content }}
   </section>
-  <footer class="article-footer">
+  <footer class="post-footer">
     <!-- Tags -->
   </footer>
 </article>

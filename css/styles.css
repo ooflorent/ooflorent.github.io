@@ -1,0 +1,181 @@
+@import "normalize.css";
+@import "syntax.css";
+
+/* ==========================================================================
+   Utilities
+   ========================================================================== */
+
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* ==========================================================================
+   Globals
+   ========================================================================== */
+
+body {
+  background: #2B2F37;
+  font: 16px/28px "Helvetica Neue", Helvetica, sans-serif;
+  color: #3A3F49;
+}
+
+a {
+  color: #0093ce;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #006998;
+}
+
+/* ==========================================================================
+   Page layout
+   ========================================================================== */
+
+#wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+#page-header,
+#page-content,
+#page-footer {
+  margin: 40px 0;
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+#page-header .logo {
+  display: block;
+  float: left;
+  text-decoration: none;
+}
+
+#page-header .logo .me,
+#page-header .logo .who {
+  display: block;
+}
+
+#page-header .logo .me {
+  color: #F0F3F8;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#page-header .logo .who {
+  color: #90A0AC;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+#page-header #navigation {
+  float: right;
+}
+
+/* ==========================================================================
+   Navigation
+   ========================================================================== */
+
+#navigation ul {
+  margin: 0;
+  list-style: none;
+}
+
+#navigation li {
+  float: left;
+}
+
+#navigation li + li {
+  margin-left: 40px;
+}
+
+#navigation a {
+  color: #90A0AC;
+  text-decoration: none;
+  transition-property: all;
+  transition-duration: 0.15s;
+
+  padding: 10px 0;
+}
+
+#navigation a:active,
+#navigation a:hover {
+  color: #F0F3F8;
+  border-bottom: 4px solid #F0F3F8;
+}
+
+/* ==========================================================================
+   Article
+   ========================================================================== */
+
+.post {
+  background: #fff;
+}
+
+.post .post-header,
+.post .post-content {
+  margin: 60px auto;
+  width: 70%;
+}
+
+.post .post-header .title {
+  margin: 0;
+  font-size: 42px;
+  font-weight: 200;
+}
+
+.post .post-header .title a {
+  text-decoration: none;
+  color: #3A3F49;
+  transition-property: color;
+  transition-duration: 0.2s;
+}
+
+.post .post-header .title a:hover {
+  color: #0093ce;
+}
+
+.post .post-header time {
+  font-size: 14px;
+  color: #90A0AC;
+  text-transform: uppercase;
+}
+
+.post .post-content {
+  font-family: Merriweather, Georgia, serif;
+}
+
+.post .post-footer {
+  background: #F0F3F8;
+}
+
+.post .post-footer .read-more a {
+  text-decoration: none;
+  display: block;
+  padding: 20px 15%;
+  text-transform: uppercase;
+  color: #90A0AC;
+  font-size: 14px;
+}
+
+.post .post-footer .read-more a:hover {
+  background: #E8EBF0;
+}
