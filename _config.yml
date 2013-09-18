@@ -1,0 +1,5 @@
+name: Florent Cailhol
+markdown: redcarpet
+pygments: true
+excerpt_separator: <!-- more -->
+paginate: 5
