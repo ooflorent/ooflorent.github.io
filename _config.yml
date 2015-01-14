@@ -1,5 +1,10 @@
-name: Florent Cailhol
+# blog settings
+title: Florent Cailhol
+analytics_account: UA-58564722-1
+disqus_account: ooflorent
+
+# build settings
+exclude: ["Gemfile", "Gemfile.lock"]
+highlighter: pygments
 markdown: redcarpet
-pygments: true
-excerpt_separator: <!-- more -->
-paginate: 5
+permalink: /:title/

@@ -1,0 +1,37 @@
+$nav-border-width: 0.3rem;
+$nav-padding:      0.6rem;
+
+.site-header {
+  border-top: $nav-border-width solid $base08;
+  background: $base00;
+  color: $base03;
+  font-family: $font-sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.site-header a {
+  display: inline-block;
+  border-top: $nav-border-width solid transparent;
+  margin-top: -$nav-border-width;
+  padding: $nav-padding 0;
+}
+
+.site-header a:hover {
+  border-color: $base07;
+  color: $base07;
+}
+
+.site-name {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.site-name strong {
+  font-weight: 800;
+}
+
+.grid-cell--icon {
+  margin-left: 0.5rem;
+  width: 2em;
+  text-align: center;
+}

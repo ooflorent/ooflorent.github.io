@@ -1,0 +1,73 @@
+// Header
+// ------
+
+.post-header {
+  padding: 1.5rem 0 0;
+  text-align: center;
+}
+
+.post-header h1 {
+  margin: 0 0 2rem;
+}
+
+.post-header h3 {
+  margin: 0;
+}
+
+// Body
+// ----
+
+.post hr {
+  border: 0;
+  border-top: 1px solid $base06;
+  width: 12%;
+  margin: 2rem auto;
+}
+
+.post h3 {
+  color: $base03;
+}
+
+.post-body img {
+  display: block;
+  margin: 0 auto;
+}
+
+.post-body a {
+  background-image: linear-gradient(to bottom, $transparent 50%, #000 50%);
+  background-repeat: repeat-x;
+  background-size: 2px 2px;
+  background-position: 0 1em;
+  color: #000;
+}
+
+.post-body a:active,
+.post-body a:focus,
+.post-body a:hover {
+  background-image: linear-gradient(to bottom, $transparent 50%, $base08 50%);
+  color: $base08;
+}
+
+.post-body .highlight {
+  border-radius: 2px;
+  padding: 1rem;
+  margin: 0.5rem 0 2rem;
+}
+
+.post-body .highlight pre {
+  margin: 0;
+}
+
+.post-body code {
+  background: $base07;
+  border-radius: 2px;
+  padding: .2em .3em;
+  color: $base02;
+}
+
+.post-body pre code {
+  padding: 0;
+  background: none;
+  border-radius: 0;
+  color: inherit;
+}

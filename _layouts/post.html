@@ -2,19 +2,16 @@
 layout: default
 ---
 
-<article class="post clearfix">
+<article class="post">
   <header class="post-header">
-    <div class="meta">
-      <time datetime="{{ page.date | date:'%Y-%m-%d' }}" pubdate="pubdate">{{ page.date | date_to_long_string }}</time>
-    </div>
-    <h1 class="title">
-      <a href="{{ page.url }}">{{ page.title }}</a>
-    </h1>
+    <h1>{{ page.title }}</h1>
+    <h3>{{ page.description }}</h3>
   </header>
-  <section class="post-content">
+  <hr>
+  <section class="post-body">
     {{ content }}
   </section>
-  <footer class="post-footer">
-    <!-- Tags -->
-  </footer>
+  <section class="post-comments">
+    {% include disqus_thread.html id=page.id %}
+  </section>
 </article>
