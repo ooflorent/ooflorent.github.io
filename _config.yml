@@ -8,3 +8,14 @@ exclude: ["Gemfile", "Gemfile.lock"]
 highlighter: pygments
 markdown: redcarpet
 permalink: /:title/
+
+redcarpet:
+  extensions:
+    - autolink
+    - disable_indented_code_blocks
+    - fenced_code_blocks
+    - no_intra_emphasis
+    - strikethrough
+    - superscript
+    - tables
+    - with_toc_data

@@ -1,7 +1,7 @@
 .highlight { background: $base00; color: $base05 } // Text
 .highlight .w { color: $base03 } // Whitespace
 .highlight .esc {} // Escape
-.highlight .err { color: $base08; background: $base01 } // Error
+.highlight .err { color: $base07; background: $base08; font-weight: bold } // Error
 .highlight .x {} // Other
 
 .highlight .k  { color: $base0E } // Keyword

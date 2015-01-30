@@ -28,6 +28,12 @@
   color: $base03;
 }
 
+.post blockquote {
+  font-style: italic;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
 .post-body img {
   display: block;
   margin: 0 auto;

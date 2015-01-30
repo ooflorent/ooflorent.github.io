@@ -1,0 +1,7 @@
+.highlight-gutter {
+
+}
+
+.highlight-gutter [data-gutter]::before {
+  content: attr(data-gutter);
+}

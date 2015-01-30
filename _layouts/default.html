@@ -47,5 +47,14 @@
       </div>
     </main>
     {% include analytics.html %}
+    <script src="/assets/js/events.js"></script>
+    <script src="/assets/js/query.js"></script>
+    <script src="/assets/js/vdom.js"></script>
+    <script src="/assets/js/hydrogen.js"></script>
+    <script>
+      bind(window, 'load', function() {
+        $$('[data-lang="hydrogen"]').forEach(highlightHydrogen)
+      })
+    </script>
   </body>
 </html>
